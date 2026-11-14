@@ -39,7 +39,7 @@ def test_web_page_is_served_from_same_origin():
         response = client.get("/")
 
     assert response.status_code == 200
-    assert "Medical Specialty Triage System" in response.text
+    assert "Specialty Recommendation System" in response.text
     assert "fetch('/predict'" in response.text
 
 

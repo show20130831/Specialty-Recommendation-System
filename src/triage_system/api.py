@@ -60,7 +60,7 @@ async def lifespan(app: FastAPI):
     DRIFT.stop()
 
 
-app = FastAPI(title="Medical Specialty Triage System", lifespan=lifespan)
+app = FastAPI(title="Specialty Recommendation System", lifespan=lifespan)
 
 
 @app.middleware("http")
