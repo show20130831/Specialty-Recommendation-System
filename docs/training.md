@@ -54,8 +54,8 @@ descriptions between train and test. That row-level split can be built for compa
 ## Training on a Linux GPU server
 
 ```bash
-git clone https://github.com/show20130831/Medical-Specialty-Triage-System.git
-cd Medical-Specialty-Triage-System
+git clone https://github.com/show20130831/Specialty-Recommendation-System.git
+cd Specialty-Recommendation-System
 python3 -m venv .venv && source .venv/bin/activate
 pip install "torch==2.14.1"            # Linux wheels from PyPI include CUDA
 pip install -e ".[train,inference,finetune]"
@@ -65,7 +65,7 @@ python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_
 Copy the raw dataset from your own machine:
 
 ```bash
-scp data/mtsamples.csv <user>@<server>:~/Medical-Specialty-Triage-System/data/
+scp data/mtsamples.csv <user>@<server>:~/Specialty-Recommendation-System/data/
 ```
 
 Run long jobs inside `tmux` so they survive an SSH disconnect:
@@ -102,7 +102,7 @@ Copy the bundle back to the serving machine. Move any existing
 inside it:
 
 ```bash
-scp -r <user>@<server>:~/Medical-Specialty-Triage-System/outputs/runs/<run>/model \
+scp -r <user>@<server>:~/Specialty-Recommendation-System/outputs/runs/<run>/model \
     models/pubmedbert_description
 ```
 

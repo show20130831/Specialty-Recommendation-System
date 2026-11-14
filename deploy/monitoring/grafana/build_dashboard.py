@@ -57,7 +57,7 @@ panel("timeseries", "/predict latency",
           "overrides": []})
 panel("timeseries", "5xx share of /predict (5 min)",
       [('(sum(increase(triage_requests_total{route="/predict", status_class="5xx"}[5m])) or vector(0)) / sum(increase(triage_requests_total{route="/predict"}[5m]))', "5xx share")],
-      0, 13, 12, 7, fieldConfig={"defaults": {"unit": "percentunit", "custom": {
+      0, 13, 12, 7, fieldConfig={"defaults": {"unit": "percentunit", "min": 0, "max": 1, "custom": {
           "thresholdsStyle": {"mode": "line"}}, "thresholds": thresholds(
           (None, "green"), (0.01, "orange"), (0.05, "red"))}, "overrides": []})
 panel("timeseries", "Requests in flight", [("triage_requests_in_flight", "in flight")],
@@ -90,7 +90,7 @@ panel("timeseries", "Uncertain rate (history; reference 7.5%)",
           (None, "green"), (0.15, "orange"), (0.25, "red"))}, "overrides": []})
 
 dashboard = {
-    "uid": "triage-ops", "title": "Medical Specialty Triage — Operations",
+    "uid": "triage-ops", "title": "Specialty Recommendation — Operations",
     "description": "Operational metrics and drift results; no text or per-specialty values.",
     "schemaVersion": 39, "version": 1, "editable": False, "refresh": "15s",
     "time": {"from": "now-1h", "to": "now"}, "tags": ["triage"],
