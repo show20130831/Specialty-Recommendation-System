@@ -1,10 +1,10 @@
 {
   "note": "Deployment record (docs/operations-plan.md §10). /version and triage_model_info must agree with it after every deployment.",
-  "deployed_utc": "2026-10-15T11:13:09Z",
+  "deployed_utc": "2026-11-14T05:32:08Z",
   "application": {
-    "image": "medical_specialty_triage_system-api:latest (built locally by docker compose)",
-    "image_id": "sha256:5562d225f4327a68f11cf1425e10dcca2ca674d17c80147696110167bfed98fc",
-    "source_commit": "90a1a09"
+    "image": "specialty_recommendation_system-api:latest (built locally by docker compose)",
+    "image_id": "sha256:bea164dc03ec52d9f38ffff6ff54cfcef5301eb74a9ca2b295b7894e10eca917",
+    "source_commit": "04a30d9"
   },
   "model": {
     "archive": "show20130831/medical-specialty-pubmedbert (private Hugging Face repository)",
