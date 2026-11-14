@@ -1,6 +1,6 @@
 {
   "uid": "triage-ops",
-  "title": "Medical Specialty Triage \u2014 Operations",
+  "title": "Specialty Recommendation \u2014 Operations",
   "description": "Operational metrics and drift results; no text or per-specialty values.",
   "schemaVersion": 39,
   "version": 1,
@@ -321,6 +321,8 @@
       "fieldConfig": {
         "defaults": {
           "unit": "percentunit",
+          "min": 0,
+          "max": 1,
           "custom": {
             "thresholdsStyle": {
               "mode": "line"

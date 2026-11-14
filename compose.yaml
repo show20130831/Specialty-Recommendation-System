@@ -1,6 +1,8 @@
 # Plain `docker compose up` starts only the API. `docker compose --profile monitoring up`
 # adds Prometheus, Alertmanager, alert-sink, and Grafana (docs/operations-plan.md §4).
 # Every published port binds to localhost.
+name: specialty_recommendation_system
+
 services:
   api:
     build: .

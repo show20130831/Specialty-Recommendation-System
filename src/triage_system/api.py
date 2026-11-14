@@ -200,7 +200,7 @@ def _on_model_loaded(loaded: LoadedModel) -> None:
 
 def _service_version() -> str:
     try:
-        return version("medical-specialty-triage-system")
+        return version("specialty-recommendation-system")
     except PackageNotFoundError:
         return "unknown"
 

@@ -8,7 +8,7 @@ check, runbook) is complete and in review; see
 
 ## 1. Product Definition
 
-**Product name:** Medical Specialty Triage System
+**Product name:** Specialty Recommendation System
 
 An educational research and engineering prototype that suggests which of eight specialty groups a short English
 clinical description belongs to. It returns the three most likely specialties with

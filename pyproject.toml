@@ -3,7 +3,7 @@ requires = ["setuptools==84.2.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "medical-specialty-triage-system"
+name = "specialty-recommendation-system"
 version = "0.1.0"
 description = "A description-based medical specialty classification service."
 readme = "README.md"

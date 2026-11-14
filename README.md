@@ -1,6 +1,6 @@
-# Medical Specialty Triage System
+# Specialty Recommendation System
 
-[![CI](https://github.com/show20130831/Medical-Specialty-Triage-System/actions/workflows/ci.yml/badge.svg)](https://github.com/show20130831/Medical-Specialty-Triage-System/actions/workflows/ci.yml)
+[![CI](https://github.com/show20130831/Specialty-Recommendation-System/actions/workflows/ci.yml/badge.svg)](https://github.com/show20130831/Specialty-Recommendation-System/actions/workflows/ci.yml)
 
 **Suggests which of eight medical specialties a clinical description belongs to, and
 says "uncertain" when a person should decide instead.**
